@@ -15,7 +15,7 @@ model = load_model()
 class_names = model.names
 
 st.title("Facial Expression Detection")
-st.write("Upload an image to detect facial expressions (happy, sad, angry, contempt, disgust, fear, neutral, surprised, sleepy).")
+st.markdown("Upload an image to detect facial expressions (happy, sad, angry, contempt, disgust, fear, neutral, surprised, sleepy).")
 
 uploaded_file = st.file_uploader(
     "Upload image", type=["jpg", "jpeg", "png"]
