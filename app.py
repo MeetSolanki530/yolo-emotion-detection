@@ -8,7 +8,7 @@ from ultralytics import YOLO
 @st.cache_resource
 def load_model():
     return YOLO(
-        r"F:\PortFolio\Projects\yolo-emotion-detection\runs\detect\train2\weights\best.pt"
+        r"runs/detect/train2/weights/best.pt"
     )
 
 model = load_model()
